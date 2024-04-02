@@ -2,7 +2,7 @@ import mysql.connector as conn
 from datetime import date
 from datetime import timedelta
 
-mydb = conn.connect(host="localhost", user="root", port=3307, passwd="22Ma33aM@123")
+mydb = conn.connect(host="localhost", user="root", port=3307, passwd="Pwioi@2301010068")
 cursor = mydb.cursor()
 cursor.execute("use library")
 def selectIt():
