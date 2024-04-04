@@ -8,15 +8,16 @@ cursor.execute("use library")
 def selectIt():
     print("\n") 
     print("-------------------------------------------")
-    print("Press 1: To view all available books")
-    print("Press 2: To add a new book")
-    print("Press 3: To see available users")
-    print("Press 4: To add a new user")
-    print("Press 5: To issue a book")
-    print("Press 6: To return a book")
-    print("Press 7: To remove a book")
-    print("Press 8: To see the issue record")
-    print("Press 9: To see overdue records")
+    print("Press 1  : To view all available books")
+    print("Press 2  : To add a new book")
+    print("Press 3  : To see available users")
+    print("Press 4  : To add a new user")
+    print("Press 5  : To issue a book")
+    print("Press 6  : To return a book")
+    print("Press 7  : To remove a book")
+    print("Press 8  : To see the issue record")
+    print("Press 9  : To see overdue records")
+    print("Press 10 : To Quit")
     print("-------------------------------------------")
     print("\n")
     
@@ -114,7 +115,7 @@ while choice != 10:
             continue
         else:
             number_of_books = int(input("Enter number of books to issue                   "))
-            if number_of_books > 3 and number_of_books < 0:
+            if number_of_books > 3 or number_of_books < 0:
                 print("You can't issue more than 3 books")
             else:
                 for x in range(number_of_books):
