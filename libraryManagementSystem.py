@@ -2,7 +2,7 @@ import mysql.connector as conn
 from datetime import date
 from datetime import timedelta
 
-mydb = conn.connect(host="localhost", user="root", port=3307, passwd="Pwioi@2301010068")
+mydb = conn.connect(host="localhost", user="root", port=3306, passwd="Pwioi@2301010068")
 cursor = mydb.cursor()
 cursor.execute("use library")
 def selectIt():
@@ -210,7 +210,7 @@ while choice != 10:
         
         
     if choice == 8:
-        # days_left = (return_date-today).days
+       
         today = date.today()
         cursor.execute(
             "update issue_data set overdue_status='YES' where datediff(curdate(),issue_date)>14"

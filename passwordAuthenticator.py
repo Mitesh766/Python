@@ -11,9 +11,9 @@ def checkLength(new_password):
 
 # Counting number of different types of characters
 # type_count[0] =>digits
-# type_count[0] =>Uppercase character
-# type_count[0] =>Lowercase character
-# type_count[0] =>Special characters
+# type_count[1] =>Uppercase character
+# type_count[2] =>Lowercase character
+# type_count[3] =>Special characters
 def check_count_Character(new_password):
     type_count = [0, 0, 0, 0]
 
